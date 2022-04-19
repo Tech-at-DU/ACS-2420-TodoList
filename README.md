@@ -770,11 +770,41 @@ of the app.
 
 ### Stretch Challenges 
 
-Try these challenges: 
+If you're done early with this project you should try the stretch chellenges here. See how far you can go with these to measure your knowledge and ability. 
 
-- Work on the design and style of the app. 
-- Add a sort button to sort the list of todos and move completed todos to the bottom. 
-- Add more features to each TodoItem. This could be a notes field, or category. 
-- Delete todos. Try deleting a todo from the detail screen. 
+Strech challenges: 
+
+###  Work on the design and style of the app. 
+
+- Improve the type styles. Adjust the font size, weight, and color. 
+- Style the view controllers. Set the background color, and titles. 
+- Add some labels or emojis to the view controllers to clarify what is going on in each.  
+
+### Add a sort button to sort the list of todos and move completed todos to the bottom. 
+
+- You'll to add some user interface to sort. This could be a bar button on the navigation bar or a button on the screen. If you add the button to the screen you'll need to leave some room at the top or bottom of the tableview. 
+- Use Array.sort() to sort the todos list on the completed property. You should save the the todos and reload the tableview data after sorting! 
+
+### Add more features to each TodoItem. This could be a notes field, or category. 
+
+- Add your new fields to the TodoItem class. Be sure to delete the todos from user defaults or you will get an error when loading data that doesn't match the new model. See: [Add priority to a todo item](#Add-priority-to-a-todo-item)
+- Add a category field. This can be a string with any name like: Home, School, Work, etc. 
+- Add a priority field. This can be an integer value like 1, 2, 3. You can display these in the UI with a segmented controller labeled: Low, Normal, High. 
+- Add a notes or description field. This can be a longer string with some notes for the todo item. You can add another textfield or label to display these in the detail screen. 
+- You can also display notes in the tableview cell. There is a default tableviewcell that has a subtitle style. You have to configure it first: https://stackoverflow.com/questions/35532961/how-to-use-uitableviewcell-with-uitableviewcellstyle-with-cell-reuse-correctly
+- You can also expand todo items with a date. Get the date when a todo is created. Save this to the TodoItem in a property. Follow the guide here: https://www.hackingwithswift.com/books/ios-swiftui/working-with-dates
+- Add a due date for a todo item. You can do this by a adding a UIDatePicker to the AddTodoViewController. 
+
+#### Sort by Priority
+
+- If you did the priority field try sorting by priority. 
+
+#### Sorting by Dates
+
+- If you added dates in the stretch challenge above try sorting them by date. Where the oldest are listed first. 
+
+### Delete todos. Try deleting a todo from the detail screen. 
+
 - Try deleting a todo from the list by swiping. Swipe to reveal options on a table view cell is a built-in feature: https://www.hackingwithswift.com/example-code/uikit/how-to-swipe-to-delete-uitableviewcells
 - Use the editing style to mark todos complete
+- Remmeber to save your todos to user defaults and reload your tableview data after removing a todo item! 
