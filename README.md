@@ -791,7 +791,7 @@ Strech challenges:
 - Add a category field. This can be a string with any name like: Home, School, Work, etc. 
 - Add a priority field. This can be an integer value like 1, 2, 3. You can display these in the UI with a segmented controller labeled: Low, Normal, High. 
 - Add a notes or description field. This can be a longer string with some notes for the todo item. You can add another textfield or label to display these in the detail screen. 
-- You can also display notes in the tableview cell. There is a default tableviewcell that has a subtitle style. You have to configure it first: https://stackoverflow.com/questions/35532961/how-to-use-uitableviewcell-with-uitableviewcellstyle-with-cell-reuse-correctly
+- You can also display notes in the tableview cell. There is a default tableviewcell that has a subtitle style. If you set the Cell Style in the storyboard you can put text in the `cell.detailTextLabel?.text` which will appear below the text in: `cell.textLabel?.text`
 - You can also expand todo items with a date. Get the date when a todo is created. Save this to the TodoItem in a property. Follow the guide here: https://www.hackingwithswift.com/books/ios-swiftui/working-with-dates
 - Add a due date for a todo item. You can do this by a adding a UIDatePicker to the AddTodoViewController. 
 
